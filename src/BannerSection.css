@@ -1,0 +1,33 @@
+.banner-section {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 2rem;
+  border-radius: 0 0 100px 0;
+  position: relative;
+}
+
+.banner-image {
+  width: 93%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 0 0 100px 0;
+  padding-left: 60px;
+}
+
+/* 📱 Mobile View */
+@media (max-width: 768px) {
+  .banner-image {
+    width: 90%;
+    /* height: 70%; */
+    padding-left: 0;
+    border-radius: 0 0 50px 0;
+    margin: 0 auto;
+  }
+
+  .banner-section {
+    border-radius: 0 0 50px 0;
+    display: flex;
+    justify-content: center;
+  }
+}

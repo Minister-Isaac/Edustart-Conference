@@ -1,0 +1,73 @@
+.agenda-section {
+  padding: 4rem 2rem;
+  background-color: #f5faff;
+  text-align: center;
+}
+
+.agenda-heading {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.agenda-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.agenda-card {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  width: 550px;
+  transition: transform 0.3s ease;
+}
+
+.agenda-card:hover {
+  transform: translateY(-5px);
+}
+
+.agenda-image {
+  width: 200px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.agenda-content {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.agenda-content h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #1c4e80;
+}
+
+.agenda-content p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* ✅ Responsive adjustment for small screens */
+@media (max-width: 480px) {
+  .agenda-card {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .agenda-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .agenda-content {
+    text-align: center;
+  }
+}

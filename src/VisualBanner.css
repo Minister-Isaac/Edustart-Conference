@@ -1,0 +1,32 @@
+.visual-banner {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  border: 4px solid #f7d17e;
+  border-top-left-radius: 120px;
+  border-bottom-right-radius: 120px;
+  margin: 2rem auto;
+}
+
+.visual-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-top-left-radius: 120px;
+  border-bottom-right-radius: 120px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .visual-banner {
+    margin: 1.5rem auto;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  .visual-banner img {
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+}

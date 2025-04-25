@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './index.css';
+import Navbar from './Navbar';
+import HeroSection from './HeroSection';
+import CountdownTimer from './CountdownTimer';
+import StatsCounter from './StatsCounter';
+import AboutSection from './AboutSection';
+import VisualBanner from './VisualBanner';
+import ConferenceAgenda from './ConferenceAgenda';
+import BannerSection from './BannerSection';
+import SpeakersSection from './SpeakersSection';
+import GetInvolved from './GetInvolved';
+import FAQ from './FAQ';
+import ContactSection from './ContactSection';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <HeroSection />
+      <CountdownTimer />
+      <StatsCounter />
+      <AboutSection />
+      <VisualBanner />
+      <ConferenceAgenda/>
+      <BannerSection/>
+      <SpeakersSection/>
+      <GetInvolved/>
+      <FAQ/>
+      <ContactSection/>
     </div>
   );
 }

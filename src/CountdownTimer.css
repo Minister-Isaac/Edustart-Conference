@@ -1,0 +1,75 @@
+.countdown-container {
+  background: linear-gradient(to bottom, #002f5f, #003b73);
+  padding: 2rem 1rem;
+  color: white;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.timer-segment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 60px;
+}
+
+.timer-number {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.timer-label {
+  font-size: 1rem;
+  margin-top: 0.3rem;
+  opacity: 0.8;
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .countdown-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .timer {
+    gap: 2rem;
+    flex-wrap: wrap; /* allow wrapping if tight */
+    justify-content: center;
+  }
+
+  .timer-number {
+    font-size: 2.2rem;
+  }
+
+  .timer-label {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .timer {
+    gap: 1.5rem;
+  }
+
+  .timer-number {
+    font-size: 1.8rem;
+  }
+
+  .timer-label {
+    font-size: 0.75rem;
+  }
+}

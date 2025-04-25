@@ -1,0 +1,46 @@
+.stats-section {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f9fafa;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  width: 100%;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.stat-value {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #3d5186;
+}
+
+.stat-label {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  color: #48639c;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .stats-section {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+    gap: 0;
+  }
+
+  .stat-value {
+    font-size: 1.6rem;
+  }
+
+  .stat-label {
+    font-size: 0.85rem;
+  }
+}

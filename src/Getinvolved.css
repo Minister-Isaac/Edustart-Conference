@@ -1,0 +1,88 @@
+/* Desktop & Tablet Styles */
+.get-involved {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.involvement-card {
+  background-color: #edf4ff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  width: 280px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.involvement-card:hover {
+  transform: translateY(-5px);
+}
+
+.involvement-card .icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.involvement-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.involvement-card p {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* Mobile View Styles */
+@media (max-width: 768px) {
+  .get-involved {
+    padding: 60px 16px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .involvement-card {
+    width: 100%;
+    max-width: 300px;
+    padding: 25px 15px;
+  }
+
+  .involvement-card .icon {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 15px;
+  }
+
+  .involvement-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .involvement-card p {
+    font-size: 0.9rem;
+  }
+}

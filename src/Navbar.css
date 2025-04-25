@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  z-index: 100;
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Nav links (desktop view) */
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #1c1c1c;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #4dabf7;
+}
+
+/* Get Tickets Button */
+.get-tickets {
+  background-color: #4dabf7;
+  color: white;
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.get-tickets:hover {
+  background-color: #339af0;
+}
+
+.cta-menu-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Hamburger Icon */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #1c1c1c;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 1rem 1.2rem;
+  }
+
+  /* Hide nav links by default */
+  .nav-links {
+    display: none;
+  }
+
+  /* Show mobile menu when toggled */
+  .nav-links.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 1rem;
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .nav-links.mobile-menu li {
+    text-align: center;
+  }
+
+  .nav-links.mobile-menu li a {
+    font-size: 1rem;
+    padding: 0.4rem 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .cta-menu-container {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .get-tickets {
+    font-size: 0.9rem;
+    padding: 0.5rem 1.1rem;
+  }
+}
