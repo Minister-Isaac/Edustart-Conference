@@ -6,7 +6,7 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const AboutSection = () => {
   return (
-    <section className="about-section" id="about">
+    <section id="about" className="about-section"> {/* Added id here */}
       <div className="about-images">
         <div className="main-image">
           <img src={imageMain} alt="Main" />

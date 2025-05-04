@@ -1,3 +1,4 @@
+/* Base Hero Section Styles */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 .hero-container {
@@ -55,6 +56,11 @@
 .hero-buttons {
   display: flex;
   gap: 1rem;
+}
+
+/* Remove default anchor link styling */
+a {
+  text-decoration: none;
 }
 
 .register-btn {

@@ -1,75 +1,99 @@
 .countdown-container {
-  background: linear-gradient(to bottom, #002f5f, #003b73);
+  background: linear-gradient(180deg, #002f5f, #003b73);
   padding: 2rem 1rem;
   color: white;
-  text-align: center;
   font-family: 'Inter', sans-serif;
-  width: 100%;
+  text-align: center;
   box-sizing: border-box;
+  width: 100%;
   overflow-x: hidden;
 }
 
-.timer {
+.timer-row,
+.label-row {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 4rem;
+  gap: 2.5rem;
   flex-wrap: nowrap;
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
-.timer-segment {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 60px;
 }
 
 .timer-number {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 700;
+  min-width: 60px;
+  text-align: center;
+}
+
+.colon {
+  font-size: 4rem;
+  font-weight: 700;
+  min-width: 20px;
+  text-align: center;
 }
 
 .timer-label {
   font-size: 1rem;
-  margin-top: 0.3rem;
-  opacity: 0.8;
+  opacity: 0.75;
+  font-weight: 400;
+  min-width: 60px;
+  text-align: center;
 }
 
-/* Tablets */
-@media (max-width: 768px) {
-  .countdown-container {
-    padding: 1.5rem 1rem;
-  }
+.timer-label.empty {
+  min-width: 20px;
+}
 
-  .timer {
+/* ---------- Tablets (max-width: 768px) ---------- */
+@media (max-width: 768px) {
+  .timer-row,
+  .label-row {
     gap: 2rem;
-    flex-wrap: wrap; /* allow wrapping if tight */
-    justify-content: center;
   }
 
   .timer-number {
-    font-size: 2.2rem;
+    font-size: 3rem;
+    min-width: 50px;
+  }
+
+  .colon {
+    font-size: 3rem;
+    min-width: 15px;
   }
 
   .timer-label {
     font-size: 0.9rem;
+    min-width: 50px;
+  }
+
+  .timer-label.empty {
+    min-width: 15px;
   }
 }
 
-/* Small phones */
+/* ---------- Small Phones (max-width: 480px) ---------- */
 @media (max-width: 480px) {
-  .timer {
+  .timer-row,
+  .label-row {
     gap: 1.5rem;
   }
 
   .timer-number {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
+    min-width: 40px;
+  }
+
+  .colon {
+    font-size: 2.2rem;
+    min-width: 10px;
   }
 
   .timer-label {
     font-size: 0.75rem;
+    min-width: 40px;
+  }
+
+  .timer-label.empty {
+    min-width: 10px;
   }
 }

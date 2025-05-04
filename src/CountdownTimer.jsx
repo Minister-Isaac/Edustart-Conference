@@ -29,23 +29,23 @@ const CountdownTimer = () => {
 
   return (
     <div className="countdown-container">
-      <div className="timer">
-        <div className="timer-segment">
-          <div className="timer-number">{timeLeft.days}</div>
-          <div className="timer-label">Days</div>
-        </div>
-        <div className="timer-segment">
-          <div className="timer-number">{timeLeft.hours.toString().padStart(2, '0')}</div>
-          <div className="timer-label">Hours</div>
-        </div>
-        <div className="timer-segment">
-          <div className="timer-number">{timeLeft.minutes.toString().padStart(2, '0')}</div>
-          <div className="timer-label">Min</div>
-        </div>
-        <div className="timer-segment">
-          <div className="timer-number">{timeLeft.seconds.toString().padStart(2, '0')}</div>
-          <div className="timer-label">Sec</div>
-        </div>
+      <div className="timer-row">
+        <div className="timer-number">{timeLeft.days}</div>
+        <div className="colon">:</div>
+        <div className="timer-number">{timeLeft.hours.toString().padStart(2, '0')}</div>
+        <div className="colon">:</div>
+        <div className="timer-number">{timeLeft.minutes.toString().padStart(2, '0')}</div>
+        <div className="colon">:</div>
+        <div className="timer-number">{timeLeft.seconds.toString().padStart(2, '0')}</div>
+      </div>
+      <div className="label-row">
+        <div className="timer-label">Days</div>
+        <div className="timer-label empty"></div>
+        <div className="timer-label">Hours</div>
+        <div className="timer-label empty"></div>
+        <div className="timer-label">Min</div>
+        <div className="timer-label empty"></div>
+        <div className="timer-label">Sec</div>
       </div>
     </div>
   );

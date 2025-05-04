@@ -1,17 +1,18 @@
-/* Base Styles */
 .faq-section {
   padding: 60px 20px;
   background-color: #fff;
   text-align: center;
+  margin-top: -20px;
 }
 
 .faq-title {
   font-size: 2.5rem;
-  font-weight: bold;
+  font-weight: 500;
   margin-bottom: 40px;
 }
 
 .faq-list {
+  margin-top: -60px;
   max-width: 800px;
   margin: 0 auto;
   text-align: left;
@@ -28,7 +29,7 @@
   justify-content: space-between;
   align-items: center;
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: 350;
   color: #000;
   transition: color 0.3s ease;
 }
@@ -76,3 +77,5 @@
     font-size: 1.25rem;
   }
 }
+
+

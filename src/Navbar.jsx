@@ -26,10 +26,22 @@ const Navbar = () => {
       </ul>
 
       <div className="cta-menu-container">
-        <a href="#tickets" className="get-tickets desktop-only">Get Tickets</a>
+        {/* Show Get Tickets on all views */}
+        <a
+          href="https://www.eventbrite.com/e/whats-next-conference-tickets-1335387703569?aff=oddtdtcreator"
+          className="get-tickets"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Get Tickets
+        </a>
 
         {/* Mobile Menu Toggle */}
-        <button className="menu-toggle mobile-only" onClick={toggleMenu}>
+        <button
+          className="menu-toggle mobile-only"
+          onClick={toggleMenu}
+          aria-label="Toggle navigation menu"
+        >
           {isMobileMenuOpen ? <FiX /> : <FiMenu />}
         </button>
       </div>
@@ -42,7 +54,16 @@ const Navbar = () => {
           <li><a href="#speakers">Speakers</a></li>
           <li><a href="#get-involved">Get Involved</a></li>
           <li><a href="#faq">FAQ</a></li>
-          <li><a href="#tickets" className="get-tickets">Get Tickets</a></li>
+          <li>
+            <a
+              href="https://www.eventbrite.com/e/whats-next-conference-tickets-1335387703569?aff=oddtdtcreator"
+              className="get-tickets"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Get Tickets
+            </a>
+          </li>
         </ul>
       )}
     </nav>
