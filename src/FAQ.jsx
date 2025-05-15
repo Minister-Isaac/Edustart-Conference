@@ -24,7 +24,7 @@ const faqData = [
   {
     question: "Can my school/organization sponsor or partner?",
     answer:
-      "Absolutely! We welcome sponsors and community partners. Email edustarttech25@gmail.com for details.",
+      "Absolutely! We welcome sponsors and community partners. Call or WhatsApp Victoria on 0913 412 2978 or send and email edustarttech25@gmail.com for details.",
   },
   {
     question: "What should I bring?",
